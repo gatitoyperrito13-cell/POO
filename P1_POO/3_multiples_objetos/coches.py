@@ -1,0 +1,36 @@
+"""  
+ Programación Orinetada a Objetos POO o OOP
+
+CLASES .- es como un molde a traves del cual se puede instanciar un objeto dentro de las clases se definen los atributos (propiedades / caracteristicas) y los métodos (funciones o acciones)
+
+OBJETOS O INSTANCIAS .- son parte de una clase los objetos o instacias pertenecen a una clase, es decir para interacturar con la clase o clases y hacer uso de los atributos y metodos es necesario crear un objeto o objetos.
+"""
+
+class Coches:
+    marca=""
+    color="azul"
+    velocidad= 0
+    potencia= 0
+    asientos = 0
+
+    def acelerar(self):
+        self.velocidad += 1
+
+    def frenar(self):
+        self.velocidad -= 1
+
+# Multiples Objetos
+coche1 = Coches()
+coche2 = Coches()
+
+print("\033c")
+print("EL color del coche 1 es de", coche1.color)
+
+coche1.color = "Verde"
+
+print("EL color del coche 1 es de", coche1.color)
+
+for i in range(1,11):
+    coche1.acelerar()
+
+print(coche1.velocidad)
